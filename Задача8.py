@@ -5,7 +5,6 @@
 # 3 2 4 -> yes
 # 3 2 1 -> no
 import os
-
 os.system('cls')
 
 n = int(input("Введите высоту шеколадки: "))

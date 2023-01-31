@@ -7,19 +7,23 @@
 # 385916 -> yes
 # 123456 -> no
 import os
+
 os.system('cls')
 
 n = int(input("Введите номер билета: "))
 lef_half = n / 1000
 right_half = n % 1000
-def SummNumbers(n):    
+
+
+def SummNumbers(n):
     summ = 0
     while n > 1:
-
         summ = int(summ + n % 10)
         n = n / 10
     return summ
-if  SummNumbers(lef_half)  ==  SummNumbers(right_half): 
+
+
+if SummNumbers(lef_half) == SummNumbers(right_half):
     print('Yes')
 else:
     print('No')
