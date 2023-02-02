@@ -6,7 +6,7 @@ import os
 os.system('cls')
 from array import array
 
-
+#    Solution   1
 n = int(input('Введите число N:  '))
 number = 2
 res = 1
