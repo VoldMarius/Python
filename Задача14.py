@@ -10,7 +10,7 @@ n = int(input('Введите число N:  '))
 number = 2
 res = 1
 result = [1]
-while res <= n:
+while res < n:
     res = res * number
     result.append(res)
 result.pop(-1)

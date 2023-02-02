@@ -7,11 +7,14 @@
 # 5 6 -> 2 3
 
 import os
-
 os.system('cls')
 
-s = int(input('Введите сумму загданных чисел:  '))
-p = int(input('Введите произведение загданных чисел:  '))
-x = int(s - p / -2)
-y = int(p / x)
-print(f'Значение X ->{x} значение Y ->{y} ')
+s = int(input('Введите сумму загданных чисел: '))
+p = int(input('Введите произведение загданных чисел: '))
+
+for x in range(1,1000):
+    for y in range(1,1000):
+        if x + y == s and x * y == p:
+            a=x
+            b=y
+print(f'Значение X ->   {a}  значение Y ->  {b} ')
