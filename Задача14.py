@@ -6,6 +6,18 @@ import os
 os.system('cls')
 from array import array
 
+
+n = int(input('Введите число N:  '))
+number = 2
+res = 1
+result = [1]
+while res < n:
+    res = res * number
+    if res < n:
+      result.append(res)
+print(result)
+
+# solution 2
 n = int(input('Введите число N:  '))
 number = 2
 res = 1
