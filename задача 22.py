@@ -11,6 +11,7 @@
 from random import randint
 from array import array
 import os
+
 os.system('cls')
 from module import creat_list
 
@@ -20,13 +21,11 @@ n_list = []
 n_list = creat_list(n)
 m_list = []
 m_list = creat_list(m)
-new = []
+new = {}
 print(*n_list)
 print(*m_list)
-n_list = list(set(n_list))
-m_list = list(set(m_list))
-for i in range(len(n_list)):
-    if n_list[i] in m_list:
-        new.append(n_list[i])
-
-print(*new)
+n_list = set(n_list)
+m_list = set(m_list)
+new = list(set.intersection(n_list, m_list))
+new.sort()
+print(new)
