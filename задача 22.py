@@ -9,8 +9,6 @@
 
 # 6 12
 from module import creat_list
-from random import randint
-from array import array
 import os
 os.system('cls')
 
