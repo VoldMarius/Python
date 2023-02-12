@@ -447,3 +447,5 @@ $RECYCLE.BIN/
 !.vscode/launch.json
 !.vscode/extensions.json
 __pycache__
+.vscode
+__pycache__
