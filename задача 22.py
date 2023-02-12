@@ -11,9 +11,8 @@
 from random import randint
 from array import array
 import os
-from module import creat_list
-
 os.system('cls')
+from module import creat_list
 
 n = int(input('Введите число N: '))
 m = int(input('Введите число К: '))
