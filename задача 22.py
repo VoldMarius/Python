@@ -11,7 +11,6 @@
 from random import randint
 from array import array
 import os
-
 os.system('cls')
 from module import creat_list
 
