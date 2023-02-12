@@ -8,14 +8,14 @@
 # 3 6 9 12 15 18
 
 # 6 12
+from module import creat_list
 from random import randint
 from array import array
 import os
 os.system('cls')
-from module import creat_list
 
-n = int(input('Введите число N: '))
-m = int(input('Введите число К: '))
+n = int(input('кол-во элементов первого множества: '))
+m = int(input('кол-во элементов второго множества: '))
 n_list = []
 n_list = creat_list(n)
 m_list = []
