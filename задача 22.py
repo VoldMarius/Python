@@ -11,17 +11,17 @@
 from random import randint
 from array import array
 import os
+from module import creat_list
+
 os.system('cls')
 
 n = int(input('Введите число N: '))
 m = int(input('Введите число К: '))
 n_list = []
+n_list = creat_list(n)
 m_list = []
+m_list = creat_list(m)
 new = []
-for i in range(n):
-    n_list.append(randint(1,20))
-for i in range(m):
-    m_list.append(randint(1,20))
 print(*n_list)
 print(*m_list)
 n_list = list(set(n_list))
@@ -29,7 +29,5 @@ m_list = list(set(m_list))
 for i in range(len(n_list)):
     if n_list[i] in m_list:
         new.append(n_list[i])
+
 print(*new)
-
-
-

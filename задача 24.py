@@ -24,8 +24,7 @@ for i in range(n):
     garden_bed.append(randint(1, a))
 print(garden_bed)
 bushes = []
-for i in range(len(garden_bed) - 2):
-    bushes.append(sum(garden_bed[i:i + 3]))
+for i in range(len(garden_bed)):
+    bushes.append(sum(garden_bed[i - 3:i]))
 
 print(f'максимальное число ягод за один заход {max((bushes))}')
-print(f'минимальное число ягод за один заход {min((bushes))}')
