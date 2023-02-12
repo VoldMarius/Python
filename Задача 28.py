@@ -13,7 +13,7 @@ def addition_numbers(x, y):
         return x
     else:
         rez += addition_numbers(x + 1, y - 1)
-    return rez
+        return rez
 
 
 a = int(input('Введите число A: '))
