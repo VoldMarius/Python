@@ -14,5 +14,4 @@ maximum = int(input('Введите максимальный элемент ин
 range_list = [i for i in range(
     len(num_list)) if num_list[i] >= minimum and num_list[i] <= maximum]
 
-
 out_red(range_list)
