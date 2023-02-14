@@ -10,10 +10,9 @@ os.system('cls')
 num_list = creat_list(10)
 minimum = int(input('Введите минимальный элемент интервала:  '))
 maximum = int(input('Введите максимальный элемент интервала:  '))
-new = {}
-for i in range(len(num_list)):
-    if num_list[i] >= minimum and num_list[i] <= maximum:
-        new[i] = num_list[i]
-range_list = [i for i in new.keys()]
+range_list = []
+range_list = [i for i in range(
+    len(num_list)) if num_list[i] >= minimum and num_list[i] <= maximum]
+
 
 out_red(range_list)
