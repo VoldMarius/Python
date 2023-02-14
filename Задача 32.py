@@ -10,7 +10,7 @@ os.system('cls')
 num_list = creat_list(10)
 minimum = int(input('Введите минимальный элемент интервала:  '))
 maximum = int(input('Введите максимальный элемент интервала:  '))
-range_list = []
+
 range_list = [i for i in range(
     len(num_list)) if num_list[i] >= minimum and num_list[i] <= maximum]
 
