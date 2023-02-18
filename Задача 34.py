@@ -12,11 +12,6 @@ from module import out_blue, out_yellow
 import os
 os.system('cls')
 
-string = 'пара-ра-рам рам-пам-папам па-ра-па-дам '
-vowels = ['а', 'я', 'у', 'ю', 'и', 'ы', 'e', 'э']
-
-out_blue((string.split()))
-
 
 def looking_rhythm(parsed_string, sample):
     count = 0
@@ -33,5 +28,8 @@ def looking_rhythm(parsed_string, sample):
     else:
         return ('Пам парам')
 
+
+string = 'пара-ра-рам рам-пам-папам па-ра-па-дам '
+vowels = ['а', 'я', 'у', 'ю', 'и', 'ы', 'e', 'э']
 
 out_yellow(looking_rhythm(string, vowels))
